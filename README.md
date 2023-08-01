@@ -59,7 +59,10 @@ Where AR Uses past values to predict the future; I Uses the differencing of obse
 Optimal parameter selection for the ARIMA Time Series Model.
 
 The first step towards fitting an ARIMA model is to find the values of ARIMA(p,d,q)(P,D,Q)s that produce the desired output. Selection of these parameters requires domain expertise and time. We shall first generate small ranges of these parameters and use a "grid search" to iteratively explore different combinations of parameters. For each combination of parameters, we fit a new seasonal ARIMA model with the SARIMAX() function from the statsmodels library and assess its overall quality.
-
+## Deployment
+We chose the ARIMA model over the other models because it had the lowest Mean Squared Error (MSE)
+We then Deployed our model using Streamlit
+application URL: http://35.224.220.212:8501/
 ## CONCLUSION
 In this project, we used Kenya's statistics from world bank dataset to build a GDP predictor.
 
